@@ -1,7 +1,5 @@
 class TasksController < ApplicationController
-  def index
-    @tasks = Task.all
-  end
+  def index; end
 
   def show; end
 
@@ -10,6 +8,7 @@ class TasksController < ApplicationController
   end
 
   def edit; end
+
   def create
     task = Task.new(task_params)
     task.save!
